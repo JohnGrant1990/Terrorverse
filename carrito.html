@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="Icon" href="Images/Logo.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .product-category h2 {
+            color: white;
+        }
+
+        h2 {
+            color:white;
+        }
+
+        .container h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .product-category {
+    margin-bottom: 1.5rem;
+}
+.product-card {
+    margin-bottom: 1rem;
+}
+    </style>
+
+    <div class="container">
+        <h1 class="my-4">Carrito de Compras</h1>
+        
+        <div class="product-category">
+            <h2>Ofertas</h2>
+            <div class="row">
+                <!-- 20 productos de la categoría Ofertas -->
+                <div class="col-md-3 product-card" data-name="Monster High Chucky & Tifanny" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Chucky & Tifanny</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Dia De Muertos" data-price="450.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Dia De Muertos</h5>
+                            <p class="card-text">$450.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Anabelle" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Anabelle</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Nightmare Before Christmas" data-price="300.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Nightmare Before Christmas</h5>
+                            <p class="card-text">$300.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Clawdeen Wolf Edicion Invierno Howliday" data-price="400.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Clawdeen Wolf Edicion Invierno Howliday</h5>
+                            <p class="card-text">$400.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Frankenstein & Bride Of Skullector" data-price="700.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Frankenstein & Bride Of Skullector</h5>
+                            <p class="card-text">$700.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High IT Pennywise Doll" data-price="550.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High IT Pennywise Doll</h5>
+                            <p class="card-text">$550.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Skullector Elvira Doll" data-price="300.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Skullector Elvira Doll</h5>
+                            <p class="card-text">$300.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Skullector Addams" data-price="600.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Skullector Addams</h5>
+                            <p class="card-text">$600.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Drácula Skullector Doll" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Drácula Skullector Doll</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Off-Whitte Raven Rhapsody" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Off-Whitte Raven Rhapsody</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Lenore Loomington" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Lenore Loomington</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High The Shining Grady Twins" data-price="600.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High The Shining Grady Twins</h5>
+                            <p class="card-text">$600.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Clawdeen Snow Bite" data-price="700.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Clawdeen Snow Bite</h5>
+                            <p class="card-text">$700.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Zombie Gaga" data-price="600.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Zombie Gaga</h5>
+                            <p class="card-text">$600.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Beetlejuice & Lydia Deetz" data-price="800.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Beetlejuice & Lydia Deetz</h5>
+                            <p class="card-text">$800.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca The Nun" data-price="400.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca The Nun</h5>
+                            <p class="card-text">$400.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Freddy Krueger" data-price="600.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Freddy Krueger</h5>
+                            <p class="card-text">$600.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Grim Reaper" data-price="800.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Grim Reaper</h5>
+                            <p class="card-text">$800.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Elvira Mistress Of The Dark" data-price="700.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Elvira Mistress Of The Dark</h5>
+                            <p class="card-text">$700.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para otros productos... -->
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Monster High</h2>
+            <div class="row">
+                <!-- 16 productos de la categoría Monster High -->
+                <div class="col-md-3 product-card" data-name="Monster High Draculaura" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Draculaura</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Clawdeen Wolf" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Clawdeen Wolf</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Frankie Stein" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Frankie Stein</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Cleo de Nile" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Cleo de Nile</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Lagoona Blue" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Lagoona Blue</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Haunt Couture Frankenstein" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Haunt Couture Frankenstein</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Elissabat" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Elissabat</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Ghoulia Yelps" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Ghoulia Yelps</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High 2012 Picture Day Abbey Bominable Doll" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High 2012 Picture Day Abbey Bominable Doll</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Skulltimates Secrets Fearidescent Lagoona Blue" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Skulltimates Secrets Fearidescent Lagoona Blue</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Brand-Boo Students" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Brand-Boo Students</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Clawdeen Wolf" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Clawdeen Wolf</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Toralei Stripe" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Toralei Stripe</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Lagoona Blue + Accs" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Lagoona Blue + Accs</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Great Scarrier" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Great Scarrier</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Monster High Great Scarrier Peri & Pear" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monster High Great Scarrier Peri & Pear</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para otros productos... -->
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Horror Icons</h2>
+            <div class="row">
+                <!-- 20 productos de la categoría Horror Icons -->
+                <div class="col-md-3 product-card" data-name="Neca It Clown" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca It Clown</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Imothep" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Imothep</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Leatherface" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Leatherface</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Chucky" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Chucky</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Michael Myers" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Michael Myers</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Dracula" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Dracula</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Cowboy" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Cowboy</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Opera Phantom" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Opera Phantom</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Invisible Man" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Invisible Man</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca 1931 Dracula" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca 1931 Dracula</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Zombie Pirate" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Zombie Pirate</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Vampire" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Vampire</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Tiffany Valentine" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tiffany Valentine</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Jungle Predator" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Jungle Predator</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Predator" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Predator</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Jason Voorhees" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Jason Voorhees</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Victor Crowley" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Victor Crowley</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Billy The Puppet" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Billy The Puppet</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Neca Frankenstein" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Neca Frankenstein</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Toony Terrors Chucky & Tiffany" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Toony Terrors Chucky & Tiffany</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para otros productos... -->
+            </div>
+        </div>
+
+        <div class="product-category">
+            <h2>Disfraces</h2>
+            <div class="row">
+                <!-- 14 productos de la categoría Disfraces -->
+                <div class="col-md-3 product-card" data-name="Máscara Smiley" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Máscara Smiley</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Máscara Double Face" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Máscara Double Face</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Máscara Evil Clown" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Máscara Evil Clown</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Máscara Black Demon" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Máscara Black Demon</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Horror Terrifier" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Horror Terrifier</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Freddy Krueger" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Freddy Krueger</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Saw Billy" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Saw Billy</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Friday The 13th" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Friday The 13th</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Friday The 13th Nueva Edicion" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Friday The 13th Nueva Edicion</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Texas Hallowen" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Texas Hallowen</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Femme Fatale Slasher" data-price="500.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Femme Fatale Slasher</h5>
+                            <p class="card-text">$500.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Smiling Demon Mask" data-price="1000.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Smiling Demon Mask</h5>
+                            <p class="card-text">$1000.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Michael Myers" data-price="750.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Myers</h5>
+                            <p class="card-text">$750.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 product-card" data-name="Ghost Slasher Dark" data-price="650.00">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ghost Slasher Dark</h5>
+                            <p class="card-text">$650.00</p>
+                            <button class="btn btn-primary add-to-cart">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para otros productos... -->
+            </div>
+        </div>
+
+        <h2>Carrito</h2>
+        <table class="table" id="cart-table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Items del carrito se agregarán aquí -->
+            </tbody>
+        </table>
+        <button class="btn btn-success" id="checkout">Comprar</button>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
